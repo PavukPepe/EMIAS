@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+
 namespace API_Emias
 {
     public class Program
@@ -13,6 +16,7 @@ namespace API_Emias
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddDbContext<API_Emias.Models.EmiasContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("con")));
 
             var app = builder.Build();
 
