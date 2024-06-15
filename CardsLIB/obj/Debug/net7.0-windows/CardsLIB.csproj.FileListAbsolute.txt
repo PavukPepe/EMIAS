@@ -1,0 +1,16 @@
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\bin\Debug\net7.0-windows\CardsLIB.deps.json
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\bin\Debug\net7.0-windows\CardsLIB.dll
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\bin\Debug\net7.0-windows\CardsLIB.pdb
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\Valid_entry.g.cs
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\CardsLIB_MarkupCompile.cache
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\CardsLIB_MarkupCompile.lref
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\Valid_entry.baml
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\CardsLIB.g.resources
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\CardsLIB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\CardsLIB.AssemblyInfoInputs.cache
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\CardsLIB.AssemblyInfo.cs
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\CardsLIB.csproj.CoreCompileInputs.cache
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\CardsLIB.dll
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\refint\CardsLIB.dll
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\CardsLIB.pdb
+C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\ref\CardsLIB.dll
