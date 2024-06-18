@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\ronetel\source\repos\CardsLIB\CardsLIB\obj\Debug\net7.0-windows\
+C:\Users\serge\source\repos\EMIAS\CardsLIB\obj\Debug\net7.0-windows\
 CardsLIB
 none
 false
@@ -13,8 +13,8 @@ TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 4-335837859
 
 8-175927326
-1981027666656
+198-1448991843
 Archival_recording_dark.xaml;Archival_recording_white.xaml;Valid_entry_dark.xaml;Valid_entry_white.xaml;
 
-True
+False
 
