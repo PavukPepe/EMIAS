@@ -2,10 +2,22 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Analysis_dark.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Analysis_white.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Archival_recording_dark.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Archival_recording_white.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Info_card_dark.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Info_card_white.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Valid_entry_dark.xaml.cs">
@@ -16,10 +28,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Analysis_dark.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Analysis_white.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Archival_recording_dark.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Archival_recording_white.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Info_card_dark.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Info_card_white.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Valid_entry_dark.xaml">
