@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace EMIAS
 {
     /// <summary>
-    /// Логика взаимодействия для AdminWindow.xaml
+    /// Логика взаимодействия для Authentication_Window.xaml
     /// </summary>
-    public partial class AdminWindow : Window
+    public partial class Authentication_Window : Window
     {
-        public AdminWindow()
+        public Authentication_Window()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
