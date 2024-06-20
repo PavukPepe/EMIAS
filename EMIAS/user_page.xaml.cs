@@ -1,4 +1,8 @@
-﻿using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -12,21 +16,13 @@ using System.Windows.Shapes;
 namespace EMIAS
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для user_page.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class user_page : Page
     {
-        public MainWindow()
+        public user_page()
         {
             InitializeComponent();
-            PagesFrame.Content = new MainPagePatient();
         }
-
-        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (e.LeftButton == MouseButtonState.Pressed)
-                DragMove();
-        }
-
     }
 }
