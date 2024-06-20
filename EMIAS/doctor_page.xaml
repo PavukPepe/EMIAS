@@ -19,12 +19,12 @@
             <RowDefinition/>
             <RowDefinition Height="15*"/>
         </Grid.RowDefinitions>
-        <TextBox materialDesign:HintAssist.Hint="Пароль для входа" VerticalAlignment="Center" Margin="15,0,15,0" BorderBrush="#807F7F" Grid.Row="0" SelectionBrush="#FF807F7F"/>
-        <TextBox materialDesign:HintAssist.Hint="Фамилия" VerticalAlignment="Center" Margin="15,0,15,0" BorderBrush="#807F7F" Grid.Row="1"/>
-        <TextBox materialDesign:HintAssist.Hint="Имя" VerticalAlignment="Center" Margin="15,0,15,0" BorderBrush="#807F7F" Grid.Row="2"/>
-        <TextBox materialDesign:HintAssist.Hint="Отчество" VerticalAlignment="Center" Margin="15,0,15,0" BorderBrush="#807F7F" Grid.Row="3"/>
-        <ComboBox materialDesign:HintAssist.Hint="Специальность врча" VerticalAlignment="Center" Margin="15,0,15,0" BorderBrush="#807F7F" Grid.Row="4"/>
-        <TextBox materialDesign:HintAssist.Hint="Адрес места работы" VerticalAlignment="Center" Margin="15,0,15,0" BorderBrush="#807F7F" Grid.Row="5"/>
+        <TextBox x:Name="PasswordTextBox" materialDesign:HintAssist.Hint="Пароль для входа" VerticalAlignment="Center" Margin="15,0,15,0" BorderBrush="#807F7F" Grid.Row="0" SelectionBrush="#FF807F7F"/>
+        <TextBox x:Name="SurnameTextBox" materialDesign:HintAssist.Hint="Фамилия" VerticalAlignment="Center" Margin="15,0,15,0" BorderBrush="#807F7F" Grid.Row="1"/>
+        <TextBox x:Name="NameTextBox" materialDesign:HintAssist.Hint="Имя" VerticalAlignment="Center" Margin="15,0,15,0" BorderBrush="#807F7F" Grid.Row="2"/>
+        <TextBox x:Name="PatronymicTextBox" materialDesign:HintAssist.Hint="Отчество" VerticalAlignment="Center" Margin="15,0,15,0" BorderBrush="#807F7F" Grid.Row="3"/>
+        <ComboBox x:Name="SpecialtyComboBox" materialDesign:HintAssist.Hint="Специальность врча" VerticalAlignment="Center" Margin="15,0,15,0" BorderBrush="#807F7F" Grid.Row="4"/>
+        <TextBox x:Name="AddressTextBox" materialDesign:HintAssist.Hint="Адрес места работы" VerticalAlignment="Center" Margin="15,0,15,0" BorderBrush="#807F7F" Grid.Row="5"/>
 
     </Grid>
 </Page>

@@ -47,14 +47,14 @@
                 </Button>
             </StackPanel>
         </Grid>
-        <DataGrid Grid.Row="1" Grid.Column="0"/>
+        <DataGrid x:Name="dataGrid" Grid.Row="1" Grid.Column="0"/>
         <Grid Grid.Row="1" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition Height="13*"/>
                 <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
-            <ComboBox materialDesign:HintAssist.Hint="Роль пользователя" Grid.Row="0" VerticalAlignment="Center" Margin="15,0,15,0" />
+            <ComboBox x:Name="ComboBoxChoiceUser"  materialDesign:HintAssist.Hint="Роль пользователя" Grid.Row="0" VerticalAlignment="Center" Margin="15,0,15,0" SelectionChanged="ComboBoxChoiceUser_SelectionChanged" />
             <Grid Grid.Row="2">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -62,12 +62,12 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Button Grid.Row="0" Background="#007BFE" Content="Добавить запись" Margin="15,0,15,0" BorderBrush="#007BFE" BorderThickness="1,1,1,1" />
-                <Button Grid.Row="1" Background="#007BFE" Content="Изменить запись" Margin="15,0,15,0" BorderBrush="#007BFE"/>
-                <Button Grid.Row="2" Background="#007BFE" Content="Удалить запись" Margin="15,0,15,0" BorderBrush="#007BFE" />
-                <Button Grid.Row="3" Background="#FE0000" Content="Выйти из аккаунта" Margin="15,0,15,0" BorderBrush="#FE0000" />
+                <Button x:Name="AddEntryButton" Grid.Row="0" Background="#007BFE" Content="Добавить запись" Margin="15,0,15,0" BorderBrush="#007BFE" BorderThickness="1,1,1,1" Click="AddEntryButton_Click" />
+                <Button x:Name="ChangeEntryButton" Grid.Row="1" Background="#007BFE" Content="Изменить запись" Margin="15,0,15,0" BorderBrush="#007BFE" Click="ChangeEntryButton_Click"/>
+                <Button x:Name="DeleteEntryButton" Grid.Row="2" Background="#007BFE" Content="Удалить запись" Margin="15,0,15,0" BorderBrush="#007BFE" Click="DeleteEntryButton_Click_1" />
+                <Button x:Name="ExitButton" Grid.Row="3" Background="#FE0000" Content="Выйти из аккаунта" Margin="15,0,15,0" BorderBrush="#FE0000" Click="ExitButton_Click" />
             </Grid>
-            <Frame Grid.Row="1" />
+            <Frame x:Name="SelectedUserFrame" Grid.Row="1" />
         </Grid>
         
     </Grid>
