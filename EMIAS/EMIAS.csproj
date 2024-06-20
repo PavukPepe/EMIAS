@@ -9,11 +9,44 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Icons\close.svg" />
+    <None Remove="Icons\full.svg" />
+    <None Remove="Icons\Glasses.svg" />
+    <None Remove="Icons\settings.svg" />
+    <None Remove="Icons\wrap.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="SharpVectors" Version="1.8.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\close.svg" />
+    <Resource Include="Icons\full.svg" />
+    <Resource Include="Icons\Glasses.svg" />
+    <Resource Include="Icons\settings.svg" />
+    <Resource Include="Icons\wrap.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Cards\Analysis_white.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Cards\Archival_recording_white.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Cards\Info_card_white.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Cards\Valid_entry_white.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>

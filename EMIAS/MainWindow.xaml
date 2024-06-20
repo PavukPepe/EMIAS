@@ -3,10 +3,76 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:EMIAS"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+        xmlns:local="clr-namespace:EMIAS" 
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="850" Width="1500" FontSize="14" FontFamily="Inter" FontWeight="Regular" Foreground="White" MouseDown="Window_MouseDown" MinHeight="472" MinWidth="718">
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="320"></ColumnDefinition>
+            <ColumnDefinition Width="1180*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42*" MinHeight="42" MaxHeight="42"></RowDefinition>
+            <RowDefinition Height="763*"></RowDefinition>
+            <RowDefinition Height="45*" MinHeight="45" MaxHeight="45"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Background="#007BFE" Grid.Row="0">
+            <TextBlock Text="ЕМАИС" FontSize="20" FontWeight="Medium" VerticalAlignment="Center" Margin="10"></TextBlock>
+            <TextBlock Text="в. 1.0" FontSize="20" FontWeight="Medium" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"></TextBlock>
+            <Separator VerticalAlignment="Bottom" Background="White" Margin="10 0 10 0" Height="1"></Separator>
+        </Grid>
+        <Grid Background="#007BFE" Grid.Column="0" Grid.Row="1">
+            <WrapPanel Orientation="Vertical" >
 
+                <TreeViewItem Header="Главная" Foreground="White">
+                    <TreeViewItem Header="Записи и направления" Foreground="White"/>
+                    <TreeViewItem Header="Рецепты" Foreground="White"/>
+                    <TreeViewItem Header="Диспансеризация" Foreground="White"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Медкарта"  Foreground="White">
+                    <TreeViewItem Header="Приемы" Foreground="White" />
+                    <TreeViewItem Header="Анализы" Foreground="White"/>
+                    <TreeViewItem Header="Исследования" Foreground="White"/>
+                </TreeViewItem>
+            </WrapPanel>
+        </Grid>
+        <Grid Grid.Row="2" Background="#007BFE"></Grid>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="20 0 0 0" Text="Запись" Foreground="Black" VerticalAlignment="Center" FontSize="20"></TextBlock>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column ="1">
+            <Button Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0">
+                <UserControl xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" Height="12" Margin="0 0 15 0">
+                    <svgc:SvgViewbox Source="/Icons/wrap.svg"/>
+                </UserControl>
+            </Button>
+            <Button Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0">
+                <UserControl xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" Height="12" Margin="0 0 15 0" Cursor="">
+                    <svgc:SvgViewbox Source="/Icons/full.svg"/>
+                </UserControl>
+            </Button>
+            <Button Width="30" Height="30" BorderBrush="Transparent" Background="Transparent"  FontSize="10" Padding="0" Foreground="Black">
+                <UserControl xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" Height="12" Margin="0 0 15 0">
+                    <svgc:SvgViewbox Source="/Icons/close.svg"/>
+                </UserControl>
+            </Button>
+        </StackPanel>
+
+        <Grid Grid.Row="2">
+            <Separator VerticalAlignment="Top" Background="White" Margin="10 0 10 0" Height="1"></Separator>
+            <WrapPanel VerticalAlignment="Center">
+                <TextBlock Text="Полис ОМС: " VerticalAlignment="Center" ></TextBlock>
+                <ComboBox></ComboBox>
+            </WrapPanel>
+            <Button Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0" HorizontalAlignment="Right" Margin="0 0 10 0">
+                <UserControl xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" Height="24" Width="24">
+                    <svgc:SvgViewbox Source="/Icons/settings.svg"/>
+                </UserControl>
+            </Button>
+        </Grid>
+        <Frame x:Name="PagesFrame" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Margin="20 0 0 0"></Frame>
     </Grid>
 </Window>

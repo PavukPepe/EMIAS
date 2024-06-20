@@ -19,6 +19,13 @@ namespace EMIAS
         public MainWindow()
         {
             InitializeComponent();
+            PagesFrame.Content = new MainPagePatient();
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
         }
     }
 }

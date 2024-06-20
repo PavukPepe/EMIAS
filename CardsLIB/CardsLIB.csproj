@@ -7,4 +7,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Icons\Glasses.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SharpVectors" Version="1.8.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\Glasses.svg" />
+  </ItemGroup>
+
 </Project>

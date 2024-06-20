@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8WmlQhyh3vjlvgpKTBL/OcEKH9nT1T79bxIR5fKukSzhYXvqnkv7/FjxMUXP3v1rDmppu527AhHWP8OnXhwp6w==",
+  "dgSpecHash": "tMwzfDZm4+3ZZuUtw3JUt6rkK3eh5ESyrxc+5uDE6XuQ4SZkBPDqUuDd82lzkgf6EwlhEAirkWfZZwaY6t49eg==",
   "success": true,
   "projectFilePath": "C:\\Users\\serge\\source\\repos\\EMIAS\\CardsLIB\\CardsLIB.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\serge\\.nuget\\packages\\sharpvectors\\1.8.4\\sharpvectors.1.8.4.nupkg.sha512"
+  ],
   "logs": []
 }
