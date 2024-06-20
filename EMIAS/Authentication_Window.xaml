@@ -1,0 +1,60 @@
+﻿<Window x:Class="EMIAS.Authentication_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:EMIAS"
+        mc:Ignorable="d"
+        Title="Authentication_Window" Height="220" Width="400" MouseDown="Window_MouseDown">
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Background="#007BFE" Grid.Row="0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column ="1">
+                <Button x:Name="СollapseButton" Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0">
+                    <UserControl xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" Height="12" Margin="0 0 15 0">
+                        <svgc:SvgViewbox Source="/Icons/wrap.svg"/>
+                    </UserControl>
+                </Button>
+                <Button x:Name="ExpandButton" Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0">
+                    <UserControl xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" Height="12" Margin="0 0 15 0" Cursor="">
+                        <svgc:SvgViewbox Source="/Icons/full.svg"/>
+                    </UserControl>
+                </Button>
+                <Button  x:Name="ClosedButton" Width="30" Height="30" BorderBrush="Transparent" Background="Transparent"  FontSize="10" Padding="0" Foreground="Black">
+                    <UserControl xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" Height="12" Margin="0 0 15 0">
+                        <svgc:SvgViewbox Source="/Icons/close.svg"/>
+                    </UserControl>
+                </Button>
+            </StackPanel>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="ЕМИАС" Foreground="White" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" FontWeight="Medium"/>
+                <TextBlock Text="Единая медицинская информационно-аналитическая система" TextWrapping="Wrap" FontSize="16px" TextAlignment="Center" Margin="10,0,10,8" Foreground="White"  VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBox  x:Name="NumberPolicyButton" materialDesign:HintAssist.Hint="Номер полиса" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10,0,10,0"/>
+            <Button  x:Name="SignButton" Grid.Row="1" Grid.Column="0" Background="#007BFE" Content="Войти" Margin="15,0,15,0" BorderBrush="#007BFE" MaxHeight="26" />
+            <Button  x:Name="DoctorButton" Grid.Row="1" Grid.Column="1" Background="#007BFE" Content="Я врач" Margin="15,0,15,0" BorderBrush="#007BFE" MaxHeight="26"/>
+        </Grid>
+    </Grid>
+</Window>
