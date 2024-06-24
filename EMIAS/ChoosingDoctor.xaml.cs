@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace EMIAS
 {
     /// <summary>
-    /// Логика взаимодействия для MainPagePatient.xaml
+    /// Логика взаимодействия для ChoosingDoctor.xaml
     /// </summary>
-    public partial class MainPagePatient : Page
+    public partial class ChoosingDoctor : Page
     {
-        public MainPagePatient()
+        public ChoosingDoctor()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            (Application.Current.MainWindow as MainWindow).PagesFrame.Content = new AnalisisPage();
         }
     }
 }

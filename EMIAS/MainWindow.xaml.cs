@@ -27,5 +27,22 @@ namespace EMIAS
             if (e.LeftButton == MouseButtonState.Pressed)
                 DragMove();
         }
+
+        private void CloseBut_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void MaxBut_Click(object sender, RoutedEventArgs e)
+        {
+            if (WindowState == WindowState.Maximized)
+                WindowState = WindowState.Normal;
+            else WindowState = WindowState.Maximized;
+        }
+
+        private void MinBut_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
     }
 }

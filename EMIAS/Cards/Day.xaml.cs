@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace EMIAS
+namespace EMIAS.Cards
 {
     /// <summary>
-    /// Логика взаимодействия для MainPagePatient.xaml
+    /// Логика взаимодействия для Day.xaml
     /// </summary>
-    public partial class MainPagePatient : Page
+    public partial class Day : UserControl
     {
-        public MainPagePatient()
+        public Day()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            (Application.Current.MainWindow as MainWindow).PagesFrame.Content = new AnalisisPage();
         }
     }
 }

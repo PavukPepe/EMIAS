@@ -44,17 +44,17 @@
         <Grid Grid.Row="2" Background="#007BFE"></Grid>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="20 0 0 0" Text="Запись" Foreground="Black" VerticalAlignment="Center" FontSize="20"></TextBlock>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column ="1">
-            <Button Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0">
+            <Button x:Name="MinBut" Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0" Click="MinBut_Click">
                 <UserControl xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" Height="12" Margin="0 0 15 0">
                     <svgc:SvgViewbox Source="/Icons/wrap.svg"/>
                 </UserControl>
             </Button>
-            <Button Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0">
+            <Button x:Name="MaxBut" Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0" Click="MaxBut_Click">
                 <UserControl xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" Height="12" Margin="0 0 15 0" Cursor="">
                     <svgc:SvgViewbox Source="/Icons/full.svg"/>
                 </UserControl>
             </Button>
-            <Button Width="30" Height="30" BorderBrush="Transparent" Background="Transparent"  FontSize="10" Padding="0" Foreground="Black">
+            <Button x:Name="CloseBut" Width="30" Height="30" BorderBrush="Transparent" Background="Transparent"  FontSize="10" Padding="0" Foreground="Black" Click="CloseBut_Click">
                 <UserControl xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" Height="12" Margin="0 0 15 0">
                     <svgc:SvgViewbox Source="/Icons/close.svg"/>
                 </UserControl>
@@ -64,7 +64,7 @@
         <Grid Grid.Row="2">
             <Separator VerticalAlignment="Top" Background="White" Margin="10 0 10 0" Height="1"></Separator>
             <WrapPanel VerticalAlignment="Center">
-                <TextBlock Text="Полис ОМС: " VerticalAlignment="Center" ></TextBlock>
+                <TextBlock Text="Полис ОМС: " VerticalAlignment="Center" Margin="10"></TextBlock>
                 <ComboBox></ComboBox>
             </WrapPanel>
             <Button Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0" HorizontalAlignment="Right" Margin="0 0 10 0">
@@ -73,6 +73,6 @@
                 </UserControl>
             </Button>
         </Grid>
-        <Frame x:Name="PagesFrame" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Margin="20 0 0 0"></Frame>
+        <Frame x:Name="PagesFrame" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Margin="20 0 0 0" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>

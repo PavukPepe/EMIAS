@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CardsLIB
+namespace EMIAS
 {
     /// <summary>
-    /// Логика взаимодействия для Analysis_white.xaml
+    /// Логика взаимодействия для MedcardResearchPage.xaml
     /// </summary>
-    public partial class Analysis_white : UserControl
+    public partial class MedcardResearchPage : Page
     {
-        public Analysis_white()
+        public MedcardResearchPage()
         {
             InitializeComponent();
         }

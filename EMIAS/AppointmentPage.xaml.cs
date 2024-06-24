@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CardsLIB
+namespace EMIAS
 {
     /// <summary>
-    /// Логика взаимодействия для Change_specialist_white.xaml
+    /// Логика взаимодействия для AppointmentPage.xaml
     /// </summary>
-    public partial class Info_card_white : UserControl
+    public partial class AppointmentPage : Page
     {
-        public Info_card_white()
+        public AppointmentPage()
         {
             InitializeComponent();
         }

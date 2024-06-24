@@ -81,6 +81,6 @@
                 </Grid>
             </WrapPanel>
         </ScrollViewer>
-        <Button Grid.Column="0" Grid.Row="1" Content="Записаться на прием" Margin="0 15 15 5" VerticalAlignment="Bottom" FontSize="12" Background="#007BFE" Foreground="#FFFFFF" BorderBrush="Snow"/>
+        <Button Grid.Column="0" Grid.Row="1" Content="Записаться на прием" Margin="0 15 15 5" VerticalAlignment="Bottom" FontSize="12" Background="#007BFE" Foreground="#FFFFFF" BorderBrush="Snow" Click="Button_Click"/>
     </Grid>
 </Page>

@@ -35,13 +35,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Cards\Analysis_white.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Cards\Archival_recording_white.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Cards\Info_card_white.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Cards\Valid_entry_white.xaml.cs">
