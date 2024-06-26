@@ -24,7 +24,7 @@ namespace EMIAS
     /// </summary>
     public partial class AdminWindow : Window
     {
-        //private Authentication_Window authentication_Window;
+        private Authentication_Window authentication_Window;
         private PatientsController patientsController;
         private DoctorsController doctorsController;
         private AdminProfsController adminController;
@@ -181,9 +181,9 @@ namespace EMIAS
         }
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            //authentication_Window = new Authentication_Window;
-            //Close();
-            //authentication_Window.Show();
+            authentication_Window = new Authentication_Window();
+            Close();
+            authentication_Window.Show();
 
         }
 

@@ -17,17 +17,17 @@
         </Grid.RowDefinitions>
         <Grid Background="#007BFE" Grid.Row="0">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column ="1">
-                <Button x:Name="СollapseButton" Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0">
+                <Button x:Name="СollapseButton" Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0" Click="СollapseButton_Click">
                     <UserControl xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" Height="12" Margin="0 0 15 0">
                         <svgc:SvgViewbox Source="/Icons/wrap.svg"/>
                     </UserControl>
                 </Button>
-                <Button x:Name="ExpandButton" Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0">
+                <Button x:Name="ExpandButton" Width="30" Height="30" BorderBrush="Transparent" Background="Transparent" Foreground="Black" IsCancel="True" Padding="0" Click="ExpandButton_Click">
                     <UserControl xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" Height="12" Margin="0 0 15 0" Cursor="">
                         <svgc:SvgViewbox Source="/Icons/full.svg"/>
                     </UserControl>
                 </Button>
-                <Button  x:Name="ClosedButton" Width="30" Height="30" BorderBrush="Transparent" Background="Transparent"  FontSize="10" Padding="0" Foreground="Black">
+                <Button  x:Name="ClosedButton" Width="30" Height="30" BorderBrush="Transparent" Background="Transparent"  FontSize="10" Padding="0" Foreground="Black" Click="ClosedButton_Click">
                     <UserControl xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" Height="12" Margin="0 0 15 0">
                         <svgc:SvgViewbox Source="/Icons/close.svg"/>
                     </UserControl>
@@ -52,9 +52,9 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBox  x:Name="NumberPolicyButton" materialDesign:HintAssist.Hint="Номер полиса" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10,0,10,0"/>
-            <Button  x:Name="SignButton" Grid.Row="1" Grid.Column="0" Background="#007BFE" Content="Войти" Margin="15,0,15,0" BorderBrush="#007BFE" MaxHeight="26" />
-            <Button  x:Name="DoctorButton" Grid.Row="1" Grid.Column="1" Background="#007BFE" Content="Я врач" Margin="15,0,15,0" BorderBrush="#007BFE" MaxHeight="26"/>
+            <TextBox  x:Name="NumberPolicyTextBox" materialDesign:HintAssist.Hint="Номер полиса" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10,0,10,0"/>
+            <Button  x:Name="SignButton" Grid.Row="1" Grid.Column="0" Background="#007BFE" Content="Войти" Margin="15,0,15,0" BorderBrush="#007BFE" MaxHeight="26" Click="SignButton_Click" />
+            <Button  x:Name="DoctorButton" Grid.Row="1" Grid.Column="1" Background="#007BFE" Content="Я врач" Margin="15,0,15,0" BorderBrush="#007BFE" MaxHeight="26" Click="DoctorButton_Click"/>
         </Grid>
     </Grid>
 </Window>
